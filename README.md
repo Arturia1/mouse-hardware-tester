@@ -1,6 +1,6 @@
-# 🖱️ Mouse Hardware Tester Pro
+# 🖱️ Mouse Hardware Tester 
 
-O **Mouse Hardware Tester Pro** é uma aplicação web de alta precisão desenvolvida para técnicos de hardware e entusiastas de periféricos. Diferente de testadores comuns, esta ferramenta comunica-se diretamente com o firmware do dispositivo através da **WebHID API** para extrair dados reais de fabricação e desempenho.
+O **Mouse Hardware Tester** é uma aplicação web de alta precisão desenvolvida para técnicos de hardware e entusiastas de periféricos. Diferente de testadores comuns, esta ferramenta comunica-se diretamente com o firmware do dispositivo através da **WebHID API** para extrair dados reais de fabricação e desempenho.
 
 
 

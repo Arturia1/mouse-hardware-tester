@@ -1,16 +1,23 @@
-# React + Vite
+# 🖱️ Mouse Hardware Tester Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Mouse Hardware Tester Pro** é uma aplicação web de alta precisão desenvolvida para técnicos de hardware e entusiastas de periféricos. Diferente de testadores comuns, esta ferramenta comunica-se diretamente com o firmware do dispositivo através da **WebHID API** para extrair dados reais de fabricação e desempenho.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## ✨ Funcionalidades Principais
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🔍 Detecção de Firmware**: Identifica o modelo real do mouse, Vendor ID (VID), Product ID (PID) e Serial Number (quando disponível pelo hardware).
+- **🟢 Checklist de Validação**: Sistema de status persistente onde o mouse só é considerado "Apto para Uso" após a verificação bem-sucedida de:
+  - Clique Esquerdo.
+  - Clique Direito.
+  - Scroll Wheel calibrado.
+- **⚙️ Calibrador de Scroll**: Monitoramento de Delta em tempo real. A ferramenta instrui o técnico sobre a faixa ideal (100-120) para detectar encoders sujos ou defeituosos.
+- **⚡ Polling Rate (Hz)**: Medição em tempo real da taxa de atualização do sensor.
+- **🎨 Interface Técnica**: Layout moderno em Dark Mode com feedback visual dinâmico via Tailwind CSS.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React.js](https://reactjs.org/) - Biblioteca principal.
+- [Tailwind CSS](https://tailwindcss.com/) - Estilização e animações de estado.
+- [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) - Comunicação direta com o hardware USB.
+- [Vite](https://vitejs.dev/) - Tooling de desenvolvimento ultra-rápido.
